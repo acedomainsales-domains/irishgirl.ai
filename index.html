@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irishgirl.ai — The Celtic AI Collection</title>
+<meta name="description" content="Premium curated .ai portfolio: 16 Irish girls' names + Irishgirl.ai flagship. Ideal for agentic AI personas. Enquire now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #faf9f7;
+    --bg-secondary: #f3f1ed;
+    --bg-card: #ffffff;
+    --text-primary: #0f0e0b;
+    --text-secondary: #3d3b37;
+    --text-muted: #6b6760;
+    --border: rgba(26,24,20,0.15);
+    --border-strong: rgba(26,24,20,0.3);
+    --accent: #1e5c3a;
+    --accent-light: #e8f2ec;
+    --accent-mid: #2c6b4a;
+    --gold: #7a5e22;
+    --gold-light: #f7f0dc;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 920px; margin: 0 auto; padding: 0 2rem; }
+
+  /* URGENCY BANNER */
+  .urgency-banner {
+    background: var(--gold-light);
+    border-bottom: 1px solid rgba(122,94,34,0.2);
+    padding: 0.65rem 2rem;
+    text-align: center;
+  }
+  .urgency-text {
+    font-size: 0.78rem; font-weight: 500;
+    letter-spacing: 0.05em; color: var(--gold);
+  }
+  .urgency-text em { font-style: normal; font-weight: 300; }
+
+  /* HERO */
+  .hero {
+    padding: 4.5rem 2rem 3.5rem;
+    text-align: center;
+    border-bottom: 0.5px solid var(--border);
+    position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px; height: 480px;
+    opacity: 0.035; pointer-events: none;
+  }
+  .kicker {
+    font-size: 10px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 1.8rem; position: relative;
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 300; line-height: 1;
+    margin-bottom: 0.5rem; color: var(--text-primary); position: relative;
+  }
+  .logo em { font-style: italic; font-weight: 300; color: var(--accent); }
+  .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; font-weight: 400; font-style: italic;
+    color: var(--text-secondary); margin-bottom: 2.5rem;
+    letter-spacing: 0.03em; position: relative;
+  }
+  .celtic-divider {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1rem; margin: 0 auto 2.5rem; max-width: 280px;
+  }
+  .celtic-line { flex: 1; height: 0.5px; background: var(--border-strong); }
+  .celtic-mark { color: var(--accent-mid); font-size: 16px; }
+  .hero-intro {
+    max-width: 580px; margin: 0 auto;
+    font-size: 1.05rem; font-weight: 300;
+    line-height: 1.85; color: var(--text-secondary); position: relative;
+  }
+  .hero-intro strong { font-weight: 500; color: var(--text-primary); }
+
+  /* CSO STATS BAR */
+  .stats-bar {
+    background: var(--accent-light);
+    border: 1px solid rgba(30,92,58,0.15);
+    border-radius: 10px; padding: 1rem 1.5rem;
+    margin-top: 2rem; position: relative;
+  }
+  .stats-bar-inner {
+    display: flex; align-items: center; flex-wrap: wrap;
+    gap: 0.5rem 1.5rem; justify-content: center;
+  }
+  .stats-label {
+    font-size: 0.72rem; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent-mid); white-space: nowrap;
+  }
+  .stats-items {
+    display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem;
+    justify-content: center;
+  }
+  .stat-pill { font-size: 0.78rem; font-weight: 400; color: var(--accent); white-space: nowrap; }
+  .stat-pill strong { font-weight: 500; }
+  .stats-source {
+    font-size: 0.67rem; color: var(--accent-mid);
+    text-align: center; margin-top: 0.5rem; opacity: 0.8;
+  }
+
+  /* PRICING BLOCK */
+  .pricing-wrap { padding: 3rem 0 0; }
+  .pricing-block {
+    background: var(--accent); border-radius: 14px;
+    padding: 2.8rem 2.5rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .pricing-block::before {
+    content: ''; position: absolute;
+    top: -80px; right: -80px; width: 240px; height: 240px;
+    border-radius: 50%; background: rgba(255,255,255,0.04);
+  }
+  .pricing-block::after {
+    content: ''; position: absolute;
+    bottom: -100px; left: -60px; width: 280px; height: 280px;
+    border-radius: 50%; background: rgba(255,255,255,0.03);
+  }
+  .pricing-label {
+    font-size: 10px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(255,255,255,0.55); margin-bottom: 0.8rem;
+    position: relative; z-index: 1;
+  }
+  .pricing-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 300; color: white; line-height: 1.1;
+    margin-bottom: 0.6rem; position: relative; z-index: 1;
+  }
+  .pricing-sub {
+    font-size: 0.85rem; font-weight: 300;
+    color: rgba(255,255,255,0.75); margin-bottom: 0.5rem;
+    line-height: 1.7; position: relative; z-index: 1;
+  }
+  .pricing-hr {
+    width: 40px; height: 0.5px;
+    background: rgba(255,255,255,0.25);
+    margin: 1.2rem auto; position: relative; z-index: 1;
+  }
+  .pricing-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; font-style: italic;
+    color: rgba(255,255,255,0.68);
+    position: relative; z-index: 1;
+  }
+  .pricing-btns {
+    display: flex; gap: 1rem; justify-content: center;
+    flex-wrap: wrap; margin-top: 2rem;
+    position: relative; z-index: 1;
+  }
+  .btn-white {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.85rem 2.2rem;
+    background: white; color: var(--accent);
+    border: none; border-radius: 8px; cursor: pointer;
+    text-decoration: none; display: inline-block; transition: opacity 0.15s;
+  }
+  .btn-white:hover { opacity: 0.9; }
+  .btn-ghost {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.85rem 2.2rem;
+    background: transparent; color: white;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 8px; cursor: pointer;
+    text-decoration: none; display: inline-block; transition: background 0.15s;
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+  /* SECTIONS */
+  .section { padding: 3.5rem 0; border-bottom: 0.5px solid var(--border); }
+  .section-label {
+    font-size: 10px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 2rem;
+  }
+
+  /* NAME GRID */
+  .name-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px; border: 0.5px solid var(--border);
+    background: var(--border); border-radius: 12px; overflow: hidden;
+  }
+  .name-card {
+    background: var(--bg-card); padding: 1.4rem 1.6rem;
+    display: flex; flex-direction: column; gap: 0.3rem;
+    transition: background 0.15s ease;
+  }
+  .name-card:hover { background: var(--accent-light); }
+  .name-row { display: flex; align-items: baseline; gap: 0.4rem; }
+  .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem; font-weight: 400;
+    letter-spacing: 0.01em; color: var(--text-primary); line-height: 1;
+  }
+  .domain-ext {
+    font-size: 0.75rem; font-family: 'Jost', sans-serif;
+    font-weight: 400; color: var(--accent-mid); letter-spacing: 0.04em;
+  }
+  .pronounce {
+    font-size: 0.68rem; font-weight: 400;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted); font-family: 'Jost', sans-serif;
+  }
+  .meaning {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; font-style: italic;
+    color: var(--text-secondary); line-height: 1.4; margin-top: 0.15rem;
+  }
+  .myth {
+    font-size: 0.74rem; font-weight: 300;
+    color: var(--text-muted); line-height: 1.55;
+    margin-top: 0.25rem; font-family: 'Jost', sans-serif;
+  }
+  .cso-badge {
+    display: inline-block; margin-top: 0.35rem;
+    font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--accent-light); color: var(--accent-mid);
+    padding: 0.2rem 0.5rem; border-radius: 4px;
+    border: 1px solid rgba(30,92,58,0.15);
+  }
+  .iconic-badge {
+    display: inline-block; margin-top: 0.35rem;
+    font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--accent-light); color: var(--accent-mid);
+    padding: 0.2rem 0.6rem; border-radius: 12px;
+    border: 1px solid rgba(30,92,58,0.15);
+    align-self: flex-start;
+  }
+
+  /* FLAGSHIP */
+  .flagship {
+    background: var(--accent-light);
+    border: 1px solid rgba(30,92,58,0.18);
+    border-radius: 12px; padding: 2.5rem 2rem;
+    text-align: center; margin-top: 1.5rem;
+  }
+  .flagship-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 300; font-style: italic;
+    color: var(--text-primary); margin-bottom: 0.6rem;
+  }
+  .flagship-name span { color: var(--accent); }
+  .flagship-desc {
+    font-size: 0.9rem; color: var(--text-secondary);
+    font-weight: 300; line-height: 1.75;
+    max-width: 500px; margin: 0 auto;
+  }
+
+  /* PERSONAS */
+  .persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; margin-top: 1.5rem;
+  }
+  .persona-card {
+    border: 0.5px solid var(--border); border-radius: 12px;
+    padding: 1.5rem; background: var(--bg-card);
+    border-top: 2px solid var(--accent);
+  }
+  .persona-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--accent-light);
+    border: 1px solid rgba(30,92,58,0.2);
+    display: flex; align-items: center;
+    justify-content: center; margin-bottom: 0.8rem;
+    font-size: 18px; line-height: 1;
+  }
+  .persona-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 400;
+    color: var(--text-primary); margin-bottom: 0.2rem;
+  }
+  .persona-role {
+    font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 0.65rem;
+  }
+  .persona-desc {
+    font-size: 0.79rem; font-weight: 300;
+    color: var(--text-secondary); line-height: 1.6;
+  }
+
+  /* PITCH */
+  .pullquote {
+    border-left: 2px solid var(--accent);
+    padding: 0.75rem 0 0.75rem 2rem; margin: 0 0 2.5rem;
+  }
+  .pullquote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem; font-weight: 400; font-style: italic;
+    line-height: 1.55; color: var(--text-primary);
+  }
+  .pitch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .pitch-card {
+    border: 0.5px solid var(--border); border-radius: 12px;
+    padding: 1.4rem 1.5rem; background: var(--bg-card);
+  }
+  .pitch-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; font-weight: 300;
+    color: var(--border-strong); line-height: 1; margin-bottom: 0.6rem;
+  }
+  .pitch-title {
+    font-size: 0.85rem; font-weight: 500;
+    color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.02em;
+  }
+  .pitch-body {
+    font-size: 0.81rem; font-weight: 300;
+    color: var(--text-secondary); line-height: 1.65;
+  }
+  .cso-note {
+    margin-top: 1.5rem; padding: 1rem 1.25rem;
+    background: var(--accent-light); border-radius: 8px;
+    border: 1px solid rgba(30,92,58,0.12);
+    font-size: 0.76rem; font-weight: 300;
+    color: var(--accent-mid); line-height: 1.6;
+  }
+  .cso-note strong { font-weight: 500; }
+
+  /* FORM */
+  .form-wrap {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border-strong);
+    border-radius: 14px; padding: 2.5rem; margin-top: 1rem;
+  }
+  .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem; font-weight: 300;
+    color: var(--text-primary); margin-bottom: 0.4rem;
+  }
+  .form-subtitle {
+    font-size: 0.85rem; font-weight: 300;
+    color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.65;
+  }
+  .form-row {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1rem; margin-bottom: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+  .form-label {
+    font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
+  }
+  .form-input, .form-select, .form-textarea {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem; font-weight: 300;
+    color: var(--text-primary); background: var(--bg);
+    border: 0.5px solid var(--border-strong);
+    border-radius: 8px; padding: 0.72rem 1rem;
+    outline: none; transition: border-color 0.15s; width: 100%;
+  }
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--accent-mid);
+  }
+  .form-textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+  .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6760' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 1rem center;
+    padding-right: 2.5rem;
+  }
+  .btn-submit {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.95rem 2.5rem;
+    background: var(--accent); color: white;
+    border: none; border-radius: 8px;
+    cursor: pointer; transition: opacity 0.15s; width: 100%; margin-top: 0.5rem;
+  }
+  .btn-submit:hover { opacity: 0.88; }
+  .form-privacy {
+    font-size: 0.7rem; color: var(--text-muted);
+    text-align: center; margin-top: 0.9rem; line-height: 1.5;
+  }
+
+  /* FOOTER */
+  .cta-section { padding: 3.5rem 0 1.5rem; text-align: center; }
+  .cta-head {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 300;
+    color: var(--text-primary); margin-bottom: 1rem; line-height: 1.25;
+  }
+  .cta-body {
+    font-size: 0.92rem; font-weight: 300;
+    color: var(--text-secondary); line-height: 1.75;
+    max-width: 500px; margin: 0 auto 1.5rem;
+  }
+  .cta-footnote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; font-style: italic; color: var(--text-muted);
+  }
+  .footer {
+    border-top: 0.5px solid var(--border); padding: 2rem 0;
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-weight: 300; font-style: italic;
+    color: var(--text-secondary);
+  }
+  .footer-note {
+    font-size: 0.72rem; font-weight: 300;
+    color: var(--text-muted); letter-spacing: 0.04em;
+  }
+  .footer-contact {
+    font-size: 0.78rem; font-weight: 400; color: var(--accent-mid);
+  }
+  .footer-contact a { color: var(--accent-mid); text-decoration: none; }
+  .footer-contact a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 3rem 1.5rem 2.5rem; }
+    .page { padding: 0 1.25rem; }
+    .section { padding: 2.5rem 0; }
+    .name-grid { grid-template-columns: 1fr; }
+    .pitch-grid { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; text-align: center; }
+    .pricing-block { padding: 2rem 1.5rem; }
+    .form-wrap { padding: 1.5rem; }
+    .stats-bar-inner { flex-direction: column; gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Urgency Banner -->
+<div class="urgency-banner">
+  <div class="urgency-text">
+    ☘&nbsp;&nbsp;St. Patrick's Day 2026 — <em>Enhanced terms for offers received by 30 April 2026. Fast-track negotiations now open.</em>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <svg class="hero-bg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="200" cy="200" r="180" fill="none" stroke="#1e5c3a" stroke-width="1.5"/>
+    <circle cx="200" cy="200" r="140" fill="none" stroke="#1e5c3a" stroke-width="1"/>
+    <circle cx="200" cy="200" r="100" fill="none" stroke="#1e5c3a" stroke-width="1"/>
+    <circle cx="200" cy="200" r="60" fill="none" stroke="#1e5c3a" stroke-width="0.5"/>
+    <circle cx="200" cy="200" r="20" fill="none" stroke="#1e5c3a" stroke-width="0.5"/>
+    <line x1="20" y1="200" x2="380" y2="200" stroke="#1e5c3a" stroke-width="0.5"/>
+    <line x1="200" y1="20" x2="200" y2="380" stroke="#1e5c3a" stroke-width="0.5"/>
+    <line x1="73" y1="73" x2="327" y2="327" stroke="#1e5c3a" stroke-width="0.5"/>
+    <line x1="327" y1="73" x2="73" y2="327" stroke="#1e5c3a" stroke-width="0.5"/>
+    <line x1="20" y1="127" x2="380" y2="273" stroke="#1e5c3a" stroke-width="0.3"/>
+    <line x1="127" y1="20" x2="273" y2="380" stroke="#1e5c3a" stroke-width="0.3"/>
+    <line x1="380" y1="127" x2="20" y2="273" stroke="#1e5c3a" stroke-width="0.3"/>
+    <line x1="273" y1="20" x2="127" y2="380" stroke="#1e5c3a" stroke-width="0.3"/>
+  </svg>
+  <div class="page">
+    <div class="kicker">A curated premium domain portfolio</div>
+    <div class="logo">Irish<em>girl</em>.ai</div>
+    <div class="tagline">The Celtic AI Collection</div>
+    <p style="font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 400; letter-spacing: 0.06em; color: var(--accent-mid); margin-top: -1.5rem; margin-bottom: 2.5rem; position: relative;">
+      16 premium Irish female name .ai domains — offered as a curated collection
+    </p>
+    <div class="celtic-divider">
+      <div class="celtic-line"></div>
+      <div class="celtic-mark">✦</div>
+      <div class="celtic-line"></div>
+    </div>
+    <p class="hero-intro">
+      The next era of AI won't be built on generic names and forgettable brands.
+      It will be built on <strong>identity</strong> — on names that carry meaning, personality, and soul.
+      <br><br>
+      Sixteen of the finest Irish female names, assembled as a coherent .ai collection for the first time.
+    </p>
+
+    <div class="stats-bar">
+      <div class="stats-bar-inner">
+        <span class="stats-label">CSO Ireland 2025</span>
+        <div class="stats-items">
+          <span class="stat-pill">Éabha <strong>#2</strong></span>
+          <span class="stat-pill">Fiadh <strong>#3</strong></span>
+          <span class="stat-pill">Croía <strong>#9</strong></span>
+          <span class="stat-pill">Saoirse <strong>#24</strong></span>
+          <span class="stat-pill">Aoife <strong>top 20</strong></span>
+          <span class="stat-pill">Niamh <strong>iconic</strong></span>
+          <span class="stat-pill">Sinéad <strong>iconic</strong></span>
+        </div>
+      </div>
+      <div class="stats-source">Source: Central Statistics Office — Irish Babies' Names 2025 (released Feb 2026 · cso.ie)</div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Pricing -->
+  <div class="pricing-wrap">
+    <div class="pricing-block">
+      <div class="pricing-label">Asking price — full collection</div>
+      <div class="pricing-amount">$450,000 – $650,000 USD</div>
+      <div class="pricing-sub">
+        16 premium Irish female name .ai domains + flagship Irishgirl.ai<br>
+        Bundle sale preferred. Negotiable for qualified buyers.<br>
+        Fast-track close within 60–90 days welcome.<br>
+        Individual names considered selectively.<br>
+        Serious offers invited — responded to within 24 hours.
+      </div>
+      <div class="pricing-hr"></div>
+      <div class="pricing-note">Offers welcome now — all serious enquiries responded to within 24 hours.</div>
+      <div class="pricing-btns">
+        <a href="#enquiry" class="btn-white">Make an Offer</a>
+        <a href="#collection" class="btn-ghost">View the Collection</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collection -->
+  <div class="section" id="collection">
+    <div class="section-label">The collection — 16 premium .ai domains</div>
+    <div class="name-grid">
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Niamh</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">NEEV</div>
+        <div class="meaning">Radiance, brightness</div>
+        <div class="myth">Daughter of the sea god — she led Oisín to Tír na nÓg, the land of eternal youth. The most iconic female figure in Irish mythology</div>
+        <span class="iconic-badge">Iconic</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Saoirse</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">SEER-sha</div>
+        <div class="meaning">Freedom, liberty</div>
+        <div class="myth">Born from Ireland's struggle for independence — one of the most powerful words in the Irish language</div>
+        <span class="cso-badge">CSO Top 25 · 2025</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Aoife</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">EE-fa</div>
+        <div class="meaning">Beauty, radiance</div>
+        <div class="myth">The greatest female warrior in Irish mythology — daughter of a king, formidable and sovereign</div>
+        <span class="cso-badge">CSO Top 20 · 2025</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Méabh</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">MAYV</div>
+        <div class="meaning">She who intoxicates</div>
+        <div class="myth">Warrior queen of Connacht — the most powerful female ruler in all of Irish mythology</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Róisín</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">ROH-sheen</div>
+        <div class="meaning">Little rose</div>
+        <div class="myth">The poetic symbol of Ireland herself — Róisín Dubh, sung in secret when her name was outlawed</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Clodagh</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">CLO-dah</div>
+        <div class="meaning">Sacred river</div>
+        <div class="myth">Named for a river associated with female divinity — elegant, modern, and immediately distinctive</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Eimear</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">EE-mer</div>
+        <div class="meaning">Swift, gifted</div>
+        <div class="myth">Wife of Cú Chulainn — possessed of the six gifts of womanhood: beauty, wisdom, grace, voice, words, and artistry</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Fiadh</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">FEE-a</div>
+        <div class="meaning">Wild, untamed</div>
+        <div class="myth">Ireland's fastest-rising girl's name — raw, elemental, deeply connected to the natural world</div>
+        <span class="cso-badge">CSO #3 nationally · 2025</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Sinéad</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">Shin-AID</div>
+        <div class="meaning">God is gracious</div>
+        <div class="myth">One of the most recognised Irish names in the world — carried with grace, power, and cultural resonance across every English-speaking culture</div>
+        <span class="iconic-badge">Iconic</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Dearbhla</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">DER-vla</div>
+        <div class="meaning">True desire</div>
+        <div class="myth">Daughter of the poet — a name that does branding work before a product is even built</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Caitriona</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">Ka-TREE-na</div>
+        <div class="meaning">Pure</div>
+        <div class="myth">The Irish soul of Katherine — elevated globally by actress Caitríona Balfe's worldwide recognition</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Aoibhe</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">EE-va</div>
+        <div class="meaning">Radiant beauty</div>
+        <div class="myth">Modern Ireland's most beloved sound — from the ancient Gaelic word for beauty and pleasure</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Mairead</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">Ma-RAID</div>
+        <div class="meaning">Pearl</div>
+        <div class="myth">The Irish form of Margaret — borne by Nobel Peace Prize laureate Mairead Corrigan</div>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Éabha</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">AY-va</div>
+        <div class="meaning">Life</div>
+        <div class="myth">The Irish Eve — one of Ireland's most-loved names, ancient roots with entirely modern appeal</div>
+        <span class="cso-badge">CSO #2 nationally · 2025</span>
+      </div>
+
+      <div class="name-card">
+        <div class="name-row"><span class="name">Croía</span><span class="domain-ext">.ai</span></div>
+        <div class="pronounce">CREE-a</div>
+        <div class="meaning">Heart</div>
+        <div class="myth">A surging modern Irish name — meaning the very core of things. Rare, distinctive, unforgettable</div>
+        <span class="cso-badge">CSO #9 nationally · 2025</span>
+      </div>
+
+
+
+    </div>
+
+    <div class="flagship">
+      <div class="flagship-name">Irish<span>girl</span>.ai</div>
+      <div class="flagship-desc">The flagship domain. The umbrella brand. A platform name for an Irish-themed AI suite, a cultural community, or the collection itself — versatile, memorable, and entirely unique.</div>
+    </div>
+  </div>
+
+  <!-- Personas -->
+  <div class="section">
+    <div class="section-label">Imagine the personas</div>
+    <div class="pullquote" style="margin-bottom: 1rem;">
+      <p>Each name is a ready-made AI character. The mythology is the brief. The domain is the address. The brand is already built.</p>
+    </div>
+    <p style="font-size: 0.88rem; font-weight: 300; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.8rem; max-width: 620px;">
+      The collection lends itself naturally to agentic AI deployment — each name carries a distinct personality archetype that maps directly onto how AI products are being built and branded today. Four examples below, but every name in the collection carries the same depth.
+    </p>
+    <div class="persona-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="persona-card">
+        <div class="persona-avatar">⚔️</div>
+        <div class="persona-name">Méabh.ai</div>
+        <div class="persona-role">Strategic Decision Agent</div>
+        <div class="persona-desc">Deploy Méabh as your bold, sovereign AI advisor. She who intoxicates — commanding, decisive, built for high-stakes decisions and executive intelligence.</div>
+      </div>
+      <div class="persona-card">
+        <div class="persona-avatar">💚</div>
+        <div class="persona-name">Croía.ai</div>
+        <div class="persona-role">Empathetic Companion</div>
+        <div class="persona-desc">Croía means heart. The warm, intuitive AI companion — the emotional intelligence layer your product needs at its very core.</div>
+      </div>
+      <div class="persona-card">
+        <div class="persona-avatar">✨</div>
+        <div class="persona-name">Niamh.ai</div>
+        <div class="persona-role">Creative & Visionary</div>
+        <div class="persona-desc">Niamh of the Golden Hair — radiant, otherworldly, ageless. The perfect persona for a generative AI platform or creative intelligence tool.</div>
+      </div>
+      <div class="persona-card">
+        <div class="persona-avatar">🕊️</div>
+        <div class="persona-name">Saoirse.ai</div>
+        <div class="persona-role">Productivity & Autonomy</div>
+        <div class="persona-desc">Freedom, personified. Saoirse is your autonomous agent — liberated, fast-moving, built to give users back their time and remove every obstacle.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Now -->
+  <div class="section">
+    <div class="section-label">Why these names. Why now.</div>
+    <div class="pullquote">
+      <p>The most memorable AI products in history succeeded partly because their names felt human, warm, and just slightly otherworldly. That formula hasn't changed. What has changed is that the obvious names are gone.</p>
+    </div>
+    <div class="pitch-grid">
+      <div class="pitch-card">
+        <div class="pitch-num">01</div>
+        <div class="pitch-title">Scarcity</div>
+        <div class="pitch-body">Single-word .ai domains are among the scarcest digital assets in existence — the best are gone, and a themed collection of this quality and coherence is rarer still. These names were assembled deliberately. This specific collection cannot be replicated.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-num">02</div>
+        <div class="pitch-title">Meaning</div>
+        <div class="pitch-body">Every name carries centuries of story — freedom, radiance, beauty, wildness, desire. Few naming traditions on earth combine lyrical sound, short form, and this depth of cultural meaning. For an AI product that needs to feel both trustworthy and memorable, that is a rare and powerful combination.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-num">03</div>
+        <div class="pitch-title">The .ai moment</div>
+        <div class="pitch-body">The .ai extension is the gold standard for AI brands — total sales volume nearly tripled to ~$27M in 2025, with premiums like Bot.ai at $1.2M and persona names fetching six figures. The agentic era is accelerating.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-num">04</div>
+        <div class="pitch-title">Ready-made personas</div>
+        <div class="pitch-body">The naming work is done. Each domain arrives with a character, a mythology, and a .ai address. For companies building identity-led AI products, this is a brand foundation — not just a domain purchase.</div>
+      </div>
+    </div>
+    <div class="cso-note">
+      <strong>Irish-origin names surge in the CSO 2025 rankings</strong> — Éabha #2, Fiadh #3, Croía #9 nationally. These are the authentic, trending identities Irish parents are choosing right now, creating real scarcity in the .ai space for genuine Celtic names.
+      <br><br>
+      Source: Central Statistics Office — Irish Babies' Names 2025 (released February 2026) · <a href="https://www.cso.ie" style="color: var(--accent-mid);">cso.ie</a>
+    </div>
+  </div>
+
+  <!-- Perfect For -->
+  <div class="section">
+    <div class="section-label">This collection could be perfect for</div>
+    <div class="pullquote">
+      <p>The right buyer is already out there. This is for them.</p>
+    </div>
+    <div class="pitch-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="pitch-card">
+        <div class="pitch-title">AI persona & agent products</div>
+        <div class="pitch-body">A company building a named AI companion, autonomous agent, or persona-led product suite that needs instant brand identity — without starting from scratch.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Irish & Celtic heritage brands</div>
+        <div class="pitch-body">An Irish or Celtic-heritage tech company wanting authentic cultural positioning at scale — names that carry real meaning, not invented ones that pretend to.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Global AI startups</div>
+        <div class="pitch-body">A US, UK or international AI startup seeking a distinctive, warm, human name with mythological depth — the antidote to bland, generic AI product naming.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Domain investors</div>
+        <div class="pitch-body">A portfolio investor or holding company acquiring a coherent, themed .ai collection ahead of the agentic AI boom — with a clear narrative and a ready-made sales story.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Entertainment & gaming</div>
+        <div class="pitch-body">A creative platform, game studio, or entertainment company building character IP with genuine cultural roots — names that feel earned, not invented.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Voice & conversational AI</div>
+        <div class="pitch-body">A voice AI product that needs a name people actually want to say out loud — lyrical, memorable, and distinct from every other assistant on the market.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Healthcare & wellness AI</div>
+        <div class="pitch-body">A mental health, wellbeing or healthcare AI platform that needs a name conveying warmth, trust, and human care — qualities these names carry by nature.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Education & edtech</div>
+        <div class="pitch-body">An AI tutoring or learning platform wanting a persona students actually connect with — approachable, intelligent, and rooted in a culture that prizes storytelling and wisdom.</div>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-title">Irish diaspora platforms</div>
+        <div class="pitch-body">A platform serving the 70 million-strong global Irish diaspora — community, genealogy, culture or language — with an AI layer that feels authentically, unmistakably Irish.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enquiry -->
+  <div class="section" id="enquiry">
+    <div class="section-label">Make an enquiry</div>
+    <div class="form-wrap" style="text-align: center;">
+      <div class="form-title">Express your interest</div>
+      <div class="form-subtitle" style="max-width: 520px; margin: 0.5rem auto 2rem;">
+        Bundle sale preferred — individual names also considered selectively. All serious enquiries welcome and responded to within 24 hours. All conversations treated in strict confidence.
+      </div>
+      <a href="mailto:hello@example.com?subject=Irishgirl.ai%20Collection%20Enquiry" class="btn-submit" style="display: inline-block; width: auto; padding: 1rem 3rem; text-decoration: none; border-radius: 8px; font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; background: var(--accent); color: white;">
+        Email Us to Enquire
+      </a>
+      <p style="margin-top: 1.2rem; font-size: 0.8rem; color: var(--text-muted); font-weight: 300;">
+        <!-- TODO: Replace hello@example.com with your actual email address -->
+        <a href="mailto:hello@example.com" style="color: var(--accent-mid); text-decoration: none;">hello@example.com</a>
+      </p>
+      <div class="form-privacy" style="margin-top: 1rem;">All enquiries treated in strict confidence. No unsolicited contact or data sharing.</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-head">Acquire the collection.<br>Or cherry-pick your name.</div>
+    <div class="cta-body">16 premium Irish female name .ai domains plus flagship Irishgirl.ai. A themed, scarce, coherent namespace built for the agentic AI era. For the right buyer, this is not a domain purchase — it is a branded foundation.</div>
+    <div class="cta-footnote">Curated with intention. Available now. Not available for long.</div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-brand">Irishgirl.ai</div>
+    <div class="footer-note">The Celtic AI Collection — a curated portfolio of premium .ai domains</div>
+    <!-- TODO: Replace hello@example.com with your actual email address -->
+    <div class="footer-contact"><a href="mailto:hello@example.com">hello@example.com</a></div>
+  </div>
+
+</div>
+
+</body>
+</html>
